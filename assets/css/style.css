@@ -12,7 +12,7 @@
 }
 
 .checkbox_input{
-  display: none;
+  opacity: 0;
 }
 
 .checkbox_label{
@@ -47,3 +47,19 @@
   border-radius: 50%;
 }
 
+.checkbox_label::after:hover{
+  content: "";
+  flex:1 1 10px;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(22, 145, 8);
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  border-radius: 50%;
+}
+
+
+a{
+  font-size: 1rem;
+}
